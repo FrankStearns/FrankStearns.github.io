@@ -46,18 +46,38 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     function clearPane() {
-        if (currentChart) { currentChart.destroy(); }
+        if (currentChart) {
+            currentChart.destroy();
+        }
         chartCanvas.style.display = 'none';
         contentDisplay.style.display = 'none';
         contentDisplay.innerHTML = '';
+
+        // --- THIS IS THE FIX ---
+        // Find and remove the instruction label if it exists
+        const instructionLabel = document.querySelector('.chart-instruction');
+        if (instructionLabel) {
+            instructionLabel.remove();
+        }
+        // -----------------------
     }
 
     function renderExperience() {
         chartCanvas.style.display = 'block';
+        
+        // --- ADD THESE LINES to create the instruction label ---
+        const instructionLabel = document.createElement('div');
+        instructionLabel.className = 'chart-instruction';
+        instructionLabel.textContent = 'Hover over points to see details';
+        // Prepend it to the main pane so it appears above the chart
+        document.querySelector('.main-pane').prepend(instructionLabel);
+        // --------------------------------------------------------
+
         currentChart = new Chart(ctx, {
             type: 'line',
             data: data.experience,
             options: {
+                // ... the rest of your chart options are unchanged
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
@@ -249,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="about-container">
                 <div class="about-header">
                     <h3>Frank Stearns</h3>
-                    <p>Quantitative Analyst & Software Engineer</p>
+                    <p>Mathematician, Economist, and Aspiring Quantitative Researcher</p>
                 </div>
                 <div class="factoid-grid">
                     <div class="factoid">

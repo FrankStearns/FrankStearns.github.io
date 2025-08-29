@@ -451,3 +451,19 @@ body {
         margin-top: 1rem;
     }
 }
+
+/* --- ADD THESE NEW STYLES TO THE END OF YOUR CSS FILE --- */
+
+/* Chart Instruction Label Styling */
+.chart-instruction {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #555;
+    font-style: italic;
+    pointer-events: none; /* Make it so you can't click on the label */
+}
