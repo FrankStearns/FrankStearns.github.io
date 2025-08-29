@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Frank Stearns</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Stearns | Career Plot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="chalkboard">
-    <h1>Frank Stearns</h1>
-  </div>
+    <header class="top-header">
+        <div class="header-section header-left">
+            <button class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <span class="graph-title">Career Plot</span>
+        </div>
+        <div class="header-section header-middle">
+            <span class="user-name">Frank Stearns</span>
+        </div>
+        <div class="header-section header-right">
+            <a href="https://www.linkedin.com/in/frank-stearns/" target="_blank" class="header-button">LinkedIn</a>
+            <a href="mailto:dstearns@colgate.edu" class="header-button signup">Contact</a>
+        </div>
+    </header>
+
+    <div class="desmos-container">
+        <aside class="sidebar">
+            <div class="expression-list">
+                <div class="expression-item" data-section="experience">
+                    <span class="color-icon" style="background-color: #2d7ff9;"></span>
+                    <code>ƒ(t) = Experience</code>
+                </div>
+                <div class="expression-item" data-section="projects">
+                    <span class="color-icon" style="background-color: #38b449;"></span>
+                    <code>P(x) = Key Projects</code>
+                </div>
+                <div class="expression-item" data-section="skills">
+                    <span class="color-icon" style="background-color: #fa7e19;"></span>
+                    <code>S(v) = Skills Vector</code>
+                </div>
+                <div class="expression-item" data-section="about">
+                    <span class="color-icon" style="background-color: #6e23ac;"></span>
+                    <code>A(c) = About & Contact</code>
+                </div>
+            </div>
+            <div class="add-expression">
+                <a href="./Frank-Stearns-Resume.pdf" download>+ Download PDF</a>
+            </div>
+        </aside>
+
+        <main class="main-pane">
+            <div id="content-display"></div>
+            <canvas id="chart-canvas"></canvas>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
