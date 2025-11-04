@@ -260,6 +260,47 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <a href="./ECON375 Final Project.pdf" download class="paper-download-link">Download Full Paper (PDF)</a>
             </div>
+
+            <h3 style="margin-top: 3rem; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">In-Progress Research</h3>
+            
+            <div class="paper-container" style="margin-bottom: 2rem;">
+                <div class="paper-header">
+                    <h2>To what extent can the European Union, through its AI Act and trade network, compel strategic alignment from both the market-driven AI ecosystem of the United States and the state-directed AI ecosystem of China?</h2>
+                    <p class="author-info">Frank Stearns // Ongoing Research</p>
+                </div>
+                <div class="paper-body">
+                    <div class="abstract-section">
+                        <h4>Summary</h4>
+                        <p>This thesis models how the <strong>EU can leverage its market power</strong> and the global trade network to compel the US and China to adopt its AI safety framework. The model demonstrates how the threat of coordinated trade sanctions forces the two AI superpowers to weigh the short-term advantage of unregulated development against the massive economic cost of being locked out of the EU market.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper-container" style="margin-bottom: 2rem;">
+                <div class="paper-header">
+                    <h2>Stochastic Differential Equation Modeling of Mean-Reverting Factors in Equity Markets</h2>
+                    <p class="author-info">Frank Stearns // Ongoing Research</p>
+                </div>
+                <div class="paper-body">
+                    <div class="abstract-section">
+                        <h4>Summary</h4>
+                        <p>This paper uses <strong>Stochastic Differential Equations (SDEs)</strong> to model mean-reverting factors in equity markets. We implement simulation methods, like the Euler-Maruyama scheme, to discretize and estimate these models. Tools from numerical analysis and linear algebra, including <strong>Principal Component Analysis (PCA)</strong>, are used to analyze model stability and identify underlying factor structures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper-container">
+                <div class="paper-header">
+                    <h2>Maximizing Expected National Welfare: A Probabilistic Extension of Optimal Tariff Theory</h2>
+                    <p class="author-info">Frank Stearns // Ongoing Research</p>
+                </div>
+                <div class="paper-body">
+                    <div class="abstract-section">
+                        <h4>Summary</h4>
+                        <p>This paper extends the standard theory of the optimal tariff by introducing <strong>uncertainty</strong> regarding the foreign country’s export supply elasticity (epsilon). By modeling this elasticity as a <strong>two-point probability distribution</strong>, we shift the objective to maximizing <strong>Expected National Welfare</strong>. The analysis concludes that the optimal tariff under uncertainty is generally <strong>lower</strong> than the deterministic rate, reflecting a necessary trade-off between terms-of-trade gains and risk minimization.</p>
+                    </div>
+                </div>
+            </div>
         `;
     }
 
